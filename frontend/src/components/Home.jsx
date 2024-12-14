@@ -4,8 +4,8 @@ const Home = () => {
   return (
     <div className='home'>
       <div className="buttons">
-        <button>Calculadora</button>
-        <button>IMC</button>
+        <a href="/calculadora"><button>Calculadora</button></a>
+        <a href="/imc"><button>IMC</button></a>
       </div>
     </div>
   )

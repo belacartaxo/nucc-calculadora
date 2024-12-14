@@ -13,7 +13,7 @@ code {
 }
 
 /*Home*/
-.home, .calculadora-page{
+.home, .calculadora-page, .imc{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,7 +27,7 @@ code {
   gap: 20px;
 }
 
-.home button{
+.home button, .imc button{
   width: 250px;
   height: 50px;
   border-radius: 5px;
@@ -39,7 +39,7 @@ code {
   color: white;
 }
 
-.home button:hover, .calculadora .tecla:hover{
+.home button:hover, .calculadora .tecla:hover, .imc button:hover{
   background-color: #212121;
   transition: ease 300ms;
   cursor: pointer;
@@ -91,4 +91,57 @@ code {
 
 .calculadora .tecla:hover{
   background-color: #2e2e2e;
+}
+
+/*IMC*/
+.imc{
+  flex-direction: column;
+  gap: 10px;
+}
+
+.imc h1{
+  color: rgb(231, 231, 231);
+}
+
+.imc .inputs{
+  display: flex;
+  gap: 100px;
+}
+
+.imc .inputs div{
+  color: rgb(231, 231, 231);
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.imc .inputs input{
+  border: none;
+  padding: 5px;
+  border-radius: 6px;
+  background-color: #6b6b6b;
+  color: rgb(231, 231, 231);
+}
+
+.imc button {
+  margin-top: 30px;
+  font-size: 17px;
+  width: 180px;
+  height: 40px;
+}
+
+.imc p{
+  color: rgb(231, 231, 231);
+  font-size: 18px;
+  margin: 8px;
+}
+
+.imc .res{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
