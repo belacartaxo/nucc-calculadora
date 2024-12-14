@@ -24,7 +24,7 @@ const Calculadora = () => {
   };
 
   const handleNumero = (numero) => {
-    if (isIgualPressionado) {
+    if (isIgualPressionado) { //DIFERENTE
       setN1(numero); // Reinicia a operação com o número pressionado
       setN2("");
       setOp("");
@@ -40,9 +40,9 @@ const Calculadora = () => {
     }
   };
 
-  const handleOperador = (operador) => {
-    if (!n1) return; // Evita operadores sem número
-    if (isIgualPressionado) {
+  const handleOperador = (operador) => { 
+    if (!n1 ) return; // Evita operadores sem número
+    if (isIgualPressionado) { //DIFERENTE
       setOp(operador); // Permite continuar do resultado anterior
       setN2(""); // Limpa o segundo número
       setIsIgualPressionado(false);
@@ -52,6 +52,7 @@ const Calculadora = () => {
       calcular(); // Resolve a operação atual antes de continuar
     }
     setOp(operador);
+    setIsIgualPressionado(false);
   };
 
   const calcular = () => {
